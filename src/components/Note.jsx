@@ -10,3 +10,5 @@ function Note() {
 }
 
 export default Note;
+
+//Challenge. Render all of the notes inside notes.js as separate Note component
