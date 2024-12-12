@@ -1,0 +1,15 @@
+index.js
+   └── renders <App />
+
+App.jsx
+   ├── imports 'notes' array
+   ├── maps over 'notes' array
+   │    └── for each note, renders <Note />
+   │          └── passes 'title' and 'content' as props
+   └── exports App component
+
+Note.jsx
+   └── defines Note component
+        ├── receives 'props' from App.jsx
+        ├── uses 'props.title' and 'props.content'
+        └── exports Note component

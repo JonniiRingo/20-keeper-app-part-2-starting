@@ -6,16 +6,19 @@ import notes from "../notes";
 
 console.log(notes); 
 
+
+function  createNotes(noteItem){
+  return <Note key= {noteItem.key}
+    title= {noteItem.title}
+    content={noteItem.content}
+    />
+}
+
 function App() {
   return (
     <div>
       <Header />
-
-      <Note 
-        title= "This is the note title"
-        content= "This is the note content"
-      />
-
+      {notes.map(createNotes)}
       <Footer />
     </div>
   );
